@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Małgorzata Michałków - stylistka osobista. Pomagam kobietom odkrywać swój unikalny styl, budować garderobę kapsułową i czuć się pięknie we własnych ubraniach.">
+  <meta name="keywords" content="stylistka, stylizacja, osobisty styl, garderoba kapsułowa, Warszawa, konsultacje stylizacyjne">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="W Swoim Stylu | Małgorzata Michałków">
+  <meta property="og:description" content="Stylistka osobista – pomagam kobietom odkrywać swój autentyczny styl i budować garderobę, w której czują się pewnie.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wswoimstylu.com.pl">
+  <meta property="og:image" content="img/img_1.jpeg">
+
+  <title>W Swoim Stylu | Małgorzata Michałków</title>
+  
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Inter:wght@400;500&amp;display=swap">
+  
+  <!-- Tailwind CDN (do produkcji lepiej zbudować własny) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --main: #5f9a8f;
+    }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', sans-serif;
+    }
+
+section[id] {
+    scroll-margin-top: 120px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- TOP BAR -->
+  <div class="bg-[#5f9a8f] text-white py-3 text-sm">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-center gap-x-8 flex-wrap">
+      <div class="flex items-center gap-x-8">
+        <a href="mailto:kontakt@wswoimstylu.com.pl" class="flex items-center gap-2 hover:underline">
+          <i class="fas fa-envelope"></i>
+          <span>KONTAKT@WSWOIMSTYLU.COM.PL</span>
+        </a>
+        <a href="tel:698225373" class="flex items-center gap-2 hover:underline">
+          <i class="fas fa-phone"></i>
+          <span>698 225 373</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-x-6">
+        <a href="https://www.facebook.com/profile.php?id=61555304377913" target="_blank" rel="noopener" class="flex items-center gap-2 hover:underline">
+          <i class="fab fa-facebook-f"></i>
+          <span class="hidden sm:inline">FACEBOOK</span>
+        </a>
+        <a href="https://www.instagram.com/malgo_em/" target="_blank" rel="noopener" class="flex items-center gap-2 hover:underline">
+          <i class="fab fa-instagram"></i>
+          <span class="hidden sm:inline">INSTAGRAM</span>
+        </a>
+        <a href="https://id.pinterest.com/malgo_em/" target="_blank" rel="noopener" class="flex items-center gap-2 hover:underline">
+          <i class="fab fa-pinterest"></i>
+          <span class="hidden sm:inline">PINTEREST</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="bg-[#5f9a8f] sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center">
+        <img src="img/nazwa.png" 
+             alt="W Swoim Stylu - logo" 
+             class="h-24 w-auto filter brightness-0 invert">
+      </a>
+      
+      <div class="hidden md:flex items-center gap-10 text-white text-2xl">
+        <a href="#o-mnie" class="hover:text-[#f8f1e3] transition">O mnie</a>
+        <a href="#oferta" class="hover:text-[#f8f1e3] transition">Oferta</a>
+        <a href="#cennik" class="hover:text-[#f8f1e3] transition">Cennik</a>
+        <a href="#newsletter" class="hover:text-[#f8f1e3] transition">Newsletter</a>
+        <a href="#kontakt" class="hover:text-[#f8f1e3] transition">Kontakt</a>
+      </div>
+
+      <button onclick="toggleMobileMenu()" aria-label="Menu mobilne" class="md:hidden text-white text-3xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-[#5f9a8f] px-6 py-4 text-white text-xl">
+      <a href="#o-mnie" class="block py-2" onclick="toggleMobileMenu()">O mnie</a>
+      <a href="#oferta" class="block py-2" onclick="toggleMobileMenu()">Oferta</a>
+      <a href="#cennik" class="block py-2" onclick="toggleMobileMenu()">Cennik</a>
+      <a href="#newsletter" class="block py-2" onclick="toggleMobileMenu()">Newsletter</a>
+      <a href="#kontakt" class="block py-2" onclick="toggleMobileMenu()">Kontakt</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative h-[50vh] md:h-[55vh] flex items-end overflow-hidden">
+    <video 
+      class="absolute inset-0 w-full h-full object-cover" 
+      autoplay 
+      muted 
+      loop 
+      playsinline
+      poster="img/img_1.jpeg">
+      <source src="video/video.mp4" type="video/mp4">
+    </video>
+
+<video autoplay muted loop playsinline>
+
+
+    <!-- Ciemna nakładka -->
+    <div class="absolute inset-0 bg-black/30"></div>
+    
+    <!-- Slogan -->
+    <div class="max-w-7xl mx-auto px-6 relative z-10 pb-12 md:pb-16 w-full">
+      <h1 class="text-white text-3xl md:text-4xl font-light tracking-wider leading-tight text-left">
+        MODA JEST DLA NAS,<br class="hidden sm:block"> A NIE MY DLA MODY
+      </h1>
+    </div>
+  </section>
+
+
+<!-- O MNIE -->
+  <section id="o-mnie" class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
+    <div class="prose text-lg leading-relaxed text-gray-700">
+      <h2 class="text-4xl font-light mb-8">Cześć, nazywam się Małgorzata Michałków</h2>
+      <p>nazywam się Małgorzata Michałków i wspieram kobiety w ich podróży do odkrywania własnego stylu i budowania garderoby dopasowanej do ich potrzeb.</p>
+
+      <p>Jestem stylistką, która skupia się nie tylko na trendach, zasadach stylizacyjnych czy sylwetkowych, ale przede wszystkim na podkreśleniu Twojej indywidualności.</p>
+      <p>Bardzo lubię modę, ale nie jestem wobec niej bezkrytyczna. Nie podążam ślepo za trendami, uważam, że moda jest dla nas, a nie my dla mody. Moda powinna być zabawą, a nie stresem. Dlatego zawsze staram się podejść do niej z uśmiechem i otwartym umysłem. Zachęcam do eksperymentowania, ale również do słuchania własnego instynktu. W końcu najważniejsze jest to, żebyś to Ty czuła się dobrze w tym, co nosisz.</p>
+      <p>Wierzę, że każda kobieta zasługuje na to, by czuć się pewnie i pięknie w tym, co nosi. W swojej pracy stawiam na indywidualne podejście do każdej klientki, uwzględniając jej osobowość, preferencje i styl życia. Pomogę Ci znaleźć ubrania i dodatki, które nie tylko dobrze wyglądają, ale także oddadzą Twój charakter.</p>
+      <p>Współpracuję z kobietami na różnych etapach ich życia – od młodych dziewczyn, które dopiero wkraczają w świat mody, po dojrzałe kobiety, które pragną odświeżyć swój wizerunek. Każda z tych podróży jest inna i każda z nich jest dla mnie źródłem inspiracji.</p>
+      <p>Podczas naszych spotkań nie tylko doradzę Ci w kwestiach stylizacyjnych, ale również nauczę, jak świadomie budować swoją garderobę. Wspólnie przejdziemy przez proces analizy sylwetki, kolorystyki i osobistych preferencji. Moim celem jest stworzenie przestrzeni, w której każda kobieta będzie mogła poczuć się pewna siebie i zadowolona z siebie.</p>
+      <p>Zapraszam do wspólnej podróży po świecie mody, gdzie razem odkryjemy Twój unikalny styl i zbudujemy garderobę, która będzie odzwierciedlać Twoją osobowość.</p>
+    </div>
+
+<div class="flex justify-center">
+      <img src="img/img_1.jpeg" 
+           alt="Małgorzata Michałków - stylistka osobista"
+           loading="lazy"
+           class="w-full max-w-md rounded-3xl shadow-xl">
+    </div>
+  </section>
+
+
+
+
+
+  <!-- OFERTA -->
+  <section id="oferta" class="bg-[#f8f1e3] py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-light text-center mb-4">Oferta</h2>
+      <p class="text-center text-lg mb-12 max-w-2xl mx-auto">Pomogę Ci odnaleźć Twój własny styl, zbudować garderobę dopasowaną do Twoich potrzeb lub stworzyć wymarzoną stylizację. Serdecznie zapraszam do skorzystania z moich usług.</p>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition">
+          <img src="img/oferta_1.jpeg" alt="Przegląd szafy" class="w-full aspect-[3/4] object-cover object-[50%_20%] rounded-2xl mb-6">
+          <h3 class="text-2xl font-medium mb-3 text-center">Przegląd szafy</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Pomogę Ci uporządkować Twoją szafę tak, aby ubrania i dodatki stanowiły wspólną bazę, umożliwiającą kreowanie wielu stylizacji na różne okazje.</p>
+          <p class="text-gray-600 text-sm leading-relaxed mt-4">Zaczniemy od przeglądu wybranych elementów garderoby, oceniając ich przydatność, stan oraz dopasowanie do Twojej sylwetki i preferencji. Nauczę Cię tworzyć zestawy, które będą nie tylko modne, ale też wygodne i funkcjonalne.</p>
+          <a href="#kontakt" class="mt-6 block text-[#5f9a8f] font-medium text-sm">Dowiedz się więcej →</a>
+        </div>
+        <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition">
+          <img src="img/zakupy.jpeg" alt="Zakupy ze stylistką" class="w-full aspect-[3/4] object-cover object-[50%_20%] rounded-2xl mb-6">
+          <h3 class="text-2xl font-medium mb-3 text-center">Zakupy ze stylistką</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Pomogę Ci wybrać ubrania i dodatki, które najlepiej podkreślą Twoją osobowość i będą dopasowane do Twojego stylu życia.</p>
+          <p class="text-gray-600 text-sm leading-relaxed mt-4">Dzięki mojemu doświadczeniu unikniesz modowych wpadek oraz zaoszczędzisz czas i pieniądze. Przygotuję propozycję stylizacji, która podkreśli Twoje atuty.</p>
+          <a href="#kontakt" class="mt-6 block text-[#5f9a8f] font-medium text-sm">Dowiedz się więcej →</a>
+        </div>
+        <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition">
+          <img src="img/konsultacje_1.jpeg" alt="Konsultacje okolicznościowe" class="w-full aspect-[3/4] object-cover object-[50%_20%] rounded-2xl mb-6">
+          <h3 class="text-2xl font-medium mb-3 text-center">Konsultacje stylizacyjne okolicznościowe</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Przed Tobą ważne wydarzenie w życiu prywatnym lub zawodowym a Ty nie masz pojęcia jak się ubrać? Chętnie Ci pomogę.</p>
+          <a href="#kontakt" class="mt-6 block text-[#5f9a8f] font-medium text-sm">Dowiedz się więcej →</a>
+        </div>
+        <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition">
+          <img src="img/konsultacje_2.jpeg" alt="Konsultacje online" class="w-full aspect-[3/4] object-cover object-[50%_20%] rounded-2xl mb-6">
+          <h3 class="text-2xl font-medium mb-3 text-center">Konsultacje online</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Jesteś na etapie poszukiwania swojego stylu lub zaczynasz budować swoją szafę kapsułową, ale nie wiesz od czego zacząć?</p>
+          <p class="text-gray-600 text-sm leading-relaxed mt-4">W trakcie spotkania online porozmawiamy o Twoich potrzebach i preferencjach modowych oraz stylu życia.</p>
+          <a href="#kontakt" class="mt-6 block text-[#5f9a8f] font-medium text-sm">Dowiedz się więcej →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENNIK -->
+  <section id="cennik" class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-light text-center mb-12">Cennik</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="border border-gray-200 rounded-3xl p-6 text-center">
+        <h3 class="text-2xl font-medium">Przegląd szafy</h3>
+        <p class="text-2xl font-light mt-3 text-[#5f9a8f]">600,00 PLN</p>
+        <p class="text-xs text-gray-500 mt-1">(do 5 godzin)<br>każda kolejna 150,00 PLN</p>
+      </div>
+      <div class="border border-gray-200 rounded-3xl p-6 text-center">
+        <h3 class="text-2xl font-medium">Zakupy ze stylistką</h3>
+        <p class="text-2xl font-light mt-3 text-[#5f9a8f]">450,00 PLN</p>
+        <p class="text-xs text-gray-500 mt-1">(do 3 godzin)<br>każda kolejna 150,00 PLN</p>
+      </div>
+      <div class="border border-[#5f9a8f] bg-[#5f9a8f]/5 rounded-3xl p-6 text-center relative">
+        <div class="absolute -top-3 right-6 bg-[#5f9a8f] text-white text-xs px-4 py-1 rounded-full">NAJLEPSZY WYBÓR</div>
+        <h3 class="text-2xl font-medium">Pakiet przegląd szafy + zakupy</h3>
+        <p class="text-2xl font-light mt-3 text-[#5f9a8f]">960,00 PLN</p>
+      </div>
+      <div class="border border-gray-200 rounded-3xl p-6 text-center">
+        <h3 class="text-2xl font-medium">Konsultacje stylizacyjne okolicznościowe</h3>
+        <p class="text-2xl font-light mt-3 text-[#5f9a8f]">od 200,00 PLN</p>
+      </div>
+      <div class="border border-gray-200 rounded-3xl p-6 text-center">
+        <h3 class="text-2xl font-medium">Konsultacje online</h3>
+        <p class="text-2xl font-light mt-3 text-[#5f9a8f]">100,00 PLN</p>
+        <p class="text-xs text-gray-500 mt-1">(1 godzina)</p>
+      </div>
+      <div class="border border-gray-200 rounded-3xl p-6 text-center text-gray-400 text-sm">
+        Stylizacja dla panny młodej<br>
+        Stylizacja sesji zdjęciowej<br>
+        Warsztaty, eventy<br>
+        <span class="text-xs">— wycena indywidualna —</span>
+      </div>
+    </div>
+  </section>
+
+<!-- NEWSLETTER -->
+  <section id="newsletter" class="bg-[#5f9a8f] py-20 text-white">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-light mb-4">Dołącz do newslettera</h2>
+      <p class="mb-8">Otrzymuj inspiracje, porady stylizacyjne i pierwszeństwo w zapisach na warsztaty.</p>
+      
+
+
+
+
+<div class="ml-embedded" data-form="Ue63VL"></div>
+
+
+
+
+
+    </div>
+  </section>
+
+  <!-- KONTAKT – dokładnie jak na screenie -->
+  <section id="kontakt" class="pt-0">
+    <div class="bg-[#5f9a8f] py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-white text-5xl font-light text-center tracking-wider">Kontakt</h2>
+      </div>
+    </div>
+    <div class="bg-[#f8f1e3] py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-md mx-auto">
+          <div class="uppercase text-[#5f9a8f] text-sm mb-6 tracking-widest">KONTAKT</div>
+          <div class="space-y-8 text-[#5f9a8f]">
+            <a href="mailto:kontakt@wswoimstylu.com.pl" class="flex items-center gap-4 hover:underline">
+              <i class="fas fa-envelope text-2xl"></i>
+              <span class="text-xl">KONTAKT@WSWOIMSTYLU.COM.PL</span>
+            </a>
+            <a href="tel:698225373" class="flex items-center gap-4 hover:underline">
+              <i class="fas fa-phone text-2xl"></i>
+              <span class="text-xl">698 225 373</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61555304377913" target="_blank" class="flex items-center gap-4 hover:underline">
+              <i class="fab fa-facebook-f text-2xl"></i>
+              <span class="text-xl">FACEBOOK</span>
+            </a>
+            <a href="https://www.instagram.com/malgo_em/" target="_blank" class="flex items-center gap-4 hover:underline">
+              <i class="fab fa-instagram text-2xl"></i>
+              <span class="text-xl">INSTAGRAM</span>
+            </a>
+            <a href="https://id.pinterest.com/malgo_em/" target="_blank" class="flex items-center gap-4 hover:underline">
+              <i class="fab fa-pinterest text-2xl"></i>
+              <span class="text-xl">PINTEREST</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-12 text-center text-sm">
+    <p>© 2026 W Swoim Stylu • Wszystkie prawa zastrzeżone</p>
+    <p class="mt-2">
+      <a href="#" class="underline">Polityka prywatności</a>
+    </p>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+
+  </script>
+
+<script>
+(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+.push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+ml('account', '2392187');
+</script>
+
+
+</body>
+</html>
