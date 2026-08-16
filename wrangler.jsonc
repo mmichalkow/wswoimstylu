@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "wswoimstylu-github",
+  "name": "wswoimstylu2",
   "compatibility_date": "2026-05-30",
   "observability": {
     "enabled": true
